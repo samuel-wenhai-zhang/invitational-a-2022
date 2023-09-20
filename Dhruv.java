@@ -11,6 +11,7 @@ public class Dhruv {
             in.nextLine();
             radios.put(n, s);
         }
+        System.out.println(radios);
 
         int n = in.nextInt();
         while (n-- > 0) {
@@ -20,18 +21,26 @@ public class Dhruv {
                 System.out.println("BAD INPUT");
             }
             else {
-                int min = -1;
-                for (int i : radios.keySet()) {
-                    if (Math.abs(frequency - i) > min) {
-                        min = Math.abs(frequency - i);
+                int minDist = -1;
+                int closest = -1;
+                for (int radio : radios.keySet()) {
+                    int dist = Math.abs(frequency - radio);
+                    if (dist < minDist) {
+                        minDist = dist;
+                        closest = radio;
                     }
-                    else if (Math.abs(frequency - i) == min) {
-                        
+                    else if (dist == minDist) {
+                        if (radio > closest) {
+                            closest = radio;
+                        }
                     }
                 }
+                System.out.println(radios.get(closest));
             }
         }
         
         in.close();
     }
 }
+
+

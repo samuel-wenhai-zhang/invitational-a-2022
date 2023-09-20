@@ -18,8 +18,7 @@ public class Sheal {
                     words.add(str.substring(i));
                 }
             }
-            words.toArray(new String[1])
-            Object[] wordArray = words.toArray();
+            String[] wordArray = words.toArray(new String[1]);
             System.out.println(wordArray[k-1]);
         }
         in.close();
