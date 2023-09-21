@@ -25,12 +25,12 @@ public class Dhruv {
                 int closest = -1;
                 for (int radio : radios.keySet()) {
                     int dist = Math.abs(frequency - radio);
-                    if (dist < minDist) {
+                    if (minDist == -1 || dist < minDist) {
                         minDist = dist;
                         closest = radio;
                     }
                     else if (dist == minDist) {
-                        if (radio > closest) {
+                        if (closest == -1 || radio > closest) {
                             closest = radio;
                         }
                     }

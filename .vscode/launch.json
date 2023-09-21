@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Dhruv",
+            "request": "launch",
+            "mainClass": "Dhruv",
+            "projectName": "invitational-a-2022-Boltcrasher_eb5c2f4a"
+        },
+        {
+            "type": "java",
             "name": "Sheal",
             "request": "launch",
             "mainClass": "Sheal",
