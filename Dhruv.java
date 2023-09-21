@@ -11,7 +11,6 @@ public class Dhruv {
             in.nextLine();
             radios.put(n, s);
         }
-        System.out.println(radios);
 
         int n = in.nextInt();
         while (n-- > 0) {
