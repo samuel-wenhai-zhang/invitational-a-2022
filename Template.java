@@ -7,7 +7,7 @@ public class Template {
         int n = in.nextInt();
         in.nextLine();
         while (n-- > 0) {
+            
         }
-        in.close();
     }
 }
